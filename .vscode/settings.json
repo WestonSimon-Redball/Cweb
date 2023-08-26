@@ -1,0 +1,7 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "helpers.h": "c",
+        "parsers.h": "c"
+    }
+}
