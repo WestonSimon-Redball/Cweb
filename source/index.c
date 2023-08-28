@@ -3,11 +3,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include <emscripten.h>
+#include <emscripten/fetch.h>
 #include "helpers.h"
 #include "parsers.h"
 
 int main(){
-    struct htmlElement* elements = parseHtml("<div> <p> hi </p> </div>");
+    struct htmlElement* elements = parseHtml("<div><p>hi</p></div>");
     printf("sizeof elements %lu \n", sizeof(elements));
     for(int element = 0; element < sizeof(elements) + 1; element++){
         if(elements[element].elementName != NULL){
